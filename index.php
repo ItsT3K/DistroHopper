@@ -21,9 +21,6 @@ $lastCommit = json_decode (file_get_contents ('cron/lastCommit.json'));
 		<div class="launchericon bfb">
 			<img src="img/unity.launcher.bfb.png" alt="Dash Home" />
 		</div>
-		<!--<div style="background-color: #D2559D;" class="launchericon" id="launch-unity-2d-config-util">
-			<img alt="Unity 2D Configuration Utility" src="img/logo.png">
-		</div>-->
 		<div style="background-color: #D45646;" class="launchericon" id="googleplus">
 			<a href="https://plus.google.com/u/0/communities/111207292310016778258">
 				<img alt="Google+" src="https://ssl.gstatic.com/images/icons/gplus-64.png">
@@ -71,6 +68,7 @@ $lastCommit = json_decode (file_get_contents ('cron/lastCommit.json'));
 				<h2><a href="<?php echo htmlentities ($lastCommit->url); ?>" title="<?php echo $lastCommit->sha; ?>">Last commit</a></h2>
 				<p>
 					Message: <em><?php echo $lastCommit->commit->message; ?></em><br />
+					Branch: <em><?php echo $lastCommit->branch->name; ?></em><br />
 					Date: <em><?php echo $lastCommit->commit->committer->date; ?></em><br />
 					Changes: <em><?php echo $lastCommit->stats->total; ?></em>
 				</p>
