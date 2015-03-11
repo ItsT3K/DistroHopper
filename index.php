@@ -5,7 +5,7 @@ $lastCommit = json_decode (file_get_contents ('cron/lastCommit.json'));
 <!DOCTYPE html>
 <html>
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Ubuntu Launcher</title>
 	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
@@ -54,25 +54,28 @@ $lastCommit = json_decode (file_get_contents ('cron/lastCommit.json'));
 				
 				<h2>Disclaimer</h2>
 				<p>Ubuntu is a registered trademark of Canonical Ltd, which I am not associated with. I don't take any responsibility for... anything.</p>
-                                
-                                <h2>Download</h2>
-                                <p>Here you can download the last version of Ubuntu Launcher that was released on the Google Play Store. From the next release on this app will probably no longer be called <em>Ubuntu Launcher</em>. For more information read the notice on the side/below.</p>
-                                <p class="download"><a href="etc/be.robinj.ubuntu.apk">Download (529 KiB)</a></p>
-                                
+				
+				<h2>Download</h2>
+				<p>Here you can download the last version of Ubuntu Launcher that was released on the Google Play Store. From the next release on this app will probably no longer be called <em>Ubuntu Launcher</em>. For more information read the notice on the side/below.</p>
+				<p class="download">
+					<a href="etc/be.robinj.ubuntu.apk">Download (529 KiB)</a><br />
+					<small>Latest version: 0.5.12</small>
+				</p>
+				
 				<p id="homeScreenshot">
-                                        <a href="#dash#screenshots" onClick="goToPage ('ribbonscreenshots');"><img src="img/screenshots/home.png" alt="[Screenshot]" class="screenshot" /></a>
-                                        <a href="#dash#screenshots" onClick="goToPage ('ribbonscreenshots');"><img src="img/screenshots/about.png" alt="[Screenshot]" class="screenshot" /></a>
-                                </p>
+					<a href="#dash#screenshots" onClick="goToPage ('ribbonscreenshots');"><img src="img/screenshots/home.png" alt="[Screenshot]" class="screenshot" /></a>
+					<a href="#dash#screenshots" onClick="goToPage ('ribbonscreenshots');"><img src="img/screenshots/about.png" alt="[Screenshot]" class="screenshot" /></a>
+				</p>
 			</section>
 			<section id="side">
 				<h2><a href="<?php echo htmlentities ($lastCommit->url); ?>" title="<?php echo $lastCommit->sha; ?>">Last commit</a></h2>
 				<p>
-                    Message: <em><?php echo $lastCommit->commit->message; ?></em><br />
-                    Date: <em><?php echo $lastCommit->commit->committer->date; ?></em><br />
-                    Changes: <em><?php echo $lastCommit->stats->total; ?></em>
-                </p>
-                
-                <h2>Notice</h2>
+					Message: <em><?php echo $lastCommit->commit->message; ?></em><br />
+					Date: <em><?php echo $lastCommit->commit->committer->date; ?></em><br />
+					Changes: <em><?php echo $lastCommit->stats->total; ?></em>
+				</p>
+				
+				<h2>Notice</h2>
 				<p>Ubuntu Launcher got taken down from the Google Play Store due to "copyright infringement".<br />
 				Long story short; The next release will probably have a new name and a new (default) theme, although I plan to keep the Ubuntu theme available. If you have any suggestions for a new name, please feel free to let me know. You can find ways to contact me <a href="http://www.robinj.be/">here</a>.</p>
 			</section>
