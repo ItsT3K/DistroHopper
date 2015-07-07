@@ -7,7 +7,7 @@ $lastCommit = json_decode (file_get_contents ('cron/lastCommit.json'));
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Ubuntu Launcher</title>
+	<title>DistroHopper</title>
 	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
 	<link type="text/css" rel="stylesheet" href="wallpaper.php" />
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -75,7 +75,7 @@ $lastCommit = json_decode (file_get_contents ('cron/lastCommit.json'));
 				
 				<h2>Notice</h2>
 				<p>Ubuntu Launcher got taken down from the Google Play Store due to "copyright infringement".<br />
-				Long story short; The next release will probably have a new name and a new (default) theme, although I plan to keep the Ubuntu theme available. If you have any suggestions for a new name, please feel free to let me know. You can find ways to contact me <a href="http://www.robinj.be/">here</a>.</p>
+				Long story short; From the next release on the project will be called DistroHopper instead of Ubuntu Launcher. It may also contain a new default theme, but the Ubuntu theme will still be available.</p>
 			</section>
 		</div>
 		<div class="dash page" id="screenshots">

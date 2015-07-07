@@ -2,7 +2,7 @@
 require_once ('../curl.php');
 
 # Branches #
-$curl = new Curl ('https://api.github.com/repos/RobinJ1995/be.robinj.ubuntu/branches');
+$curl = new Curl ('https://api.github.com/repos/RobinJ1995/DistroHopper/branches');
 $curl->useragent = 'RobinJ1995';
 $result = $curl->exec ();
 
@@ -13,7 +13,7 @@ $lastCommit = NULL;
 
 foreach ($branches as $branch)
 {
-	$curl = new Curl ('https://api.github.com/repos/RobinJ1995/be.robinj.ubuntu/commits/' . $branch->name);
+	$curl = new Curl ('https://api.github.com/repos/RobinJ1995/DistroHopper/commits/' . $branch->name);
 	$curl->useragent = 'RobinJ1995';
 	
 	$result = $curl->exec ();
